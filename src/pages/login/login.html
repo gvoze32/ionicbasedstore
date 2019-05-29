@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p>Username</p>
+  <ion-item>
+    <ion-input [(ngModel)]="username" full type="text" placeholder="Username"></ion-input>
+  </ion-item>
+  <p>Password</p>
+  <ion-item>
+    <ion-input [(ngModel)]="password" full type="password" placeholder="Password"></ion-input>
+  </ion-item>
+  <button ion-button full (click)="Masuk()">
+    <ion-icon name="person"></ion-icon> Login
+  </button>
+  <button ion-button full (click)="HomePage()">
+    <ion-icon name="close-circle"></ion-icon> No Login
+  </button>
+</ion-content>

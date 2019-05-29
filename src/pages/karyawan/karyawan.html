@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Karyawan</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Nomor</ion-label>
+      <ion-label>Nama</ion-label>
+      <ion-label>Jabatan</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item *ngFor="let karyawan of daftar">
+      <ion-label>{{ karyawan['NoPeg'] }}</ion-label>
+      <ion-label>{{ karyawan['Nama'] }}</ion-label>
+      <ion-label>{{ karyawan['Jabatan'] }}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
